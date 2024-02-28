@@ -13,14 +13,14 @@ Have fun :)
 
 ## Bash Scripts @todo
 
-[ ] `df.sh` => Displays disk usage information
+[] `df.sh` => Displays disk usage information
 
-[ ] `rename.sh` => Renames a file from "oldname.txt" to "new.txt"
+[] `rename.sh` => Renames a file from "oldname.txt" to "new.txt"
 
-[ ] `filesearch.sh` => Searches for a specified pattern recursively in files
+[] `filesearch.sh` => Searches for a specified pattern recursively in files
 
-[ ] `service_status.sh` => Checks if a specific system service is running
+[] `service_status.sh` => Checks if a specific system service is running
 
-[ ] `ip_address_validation.sh` => Validates user input as an IP address
+[] `ip_address_validation.sh` => Validates user input as an IP address
 
-[ ] `password_generator.sh` => Generates a random password of specified length using characters from a set
+[] `password_generator.sh` => Generates a random password of specified length using characters from a set
