@@ -1,7 +1,5 @@
 # scripting-bash
 
-
-
 ## Getting started
 
 To use this scripts you need to:
