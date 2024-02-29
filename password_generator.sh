@@ -5,7 +5,5 @@ length=12
 password=$(head /dev/urandom  | tr -dc "$characters" | head -c "$length")
 echo "Generated password : $password"
 
-
-
 #opensslrand-hex14
 
