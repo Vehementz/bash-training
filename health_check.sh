@@ -14,6 +14,9 @@
 # Memory check
 ##
 
+
+
+
 server_name=$(hostname)
 
 function memory_check() {
