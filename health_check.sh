@@ -7,24 +7,21 @@
 #	- TCP ping
 #   - Memory usage
 #   - CPU load
-#   - Number of TCP connections
 #   - Kernel version
+#   - Number of TCP connections
 ##
 
 ##
 # Memory check
 ##
 
-
 # server_name=$(hostname)
-
 read -p "IP server" server
 read -p "Choose a port server" port
 
-
 function ping_server() {
 	local server=$1
-	echo "Pinging $server...."
+	echo "Pinging $server..."
 	sudo ping -c 1 $server > /dev/null 2>&1
 	if [ $?  -eq 0 ]; then
 		echo "$server is accessible"
@@ -89,6 +86,13 @@ function kernel_check() {
 	uname -r
     echo "#######"
 }
+
+declare -A servers=( ["127.0.0.1"]="80" ["127.0.0.1"]="443" )
+for server in "${servers[@]}"; do
+	ping_server "$server"
+	check_port "$server" "${servers[$server]}"
+	check_http "http://$server"
+
 
 function all_checks() {
 	memory_check
