@@ -15,8 +15,6 @@
 ##
 
 
-
-
 server_name=$(hostname)
 
 function memory_check() {
@@ -36,6 +34,9 @@ function cpu_check() {
 
 function tcp_check() {
     echo "#######"
+	local url=$1
+	echo "Checking URL $url..."
+	# response=
 	echo "Total TCP connections on ${server_name}: "
     echo ""
 	cat  /proc/net/tcp | wc -l
